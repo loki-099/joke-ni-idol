@@ -34,23 +34,23 @@ const Body = () => {
   }, [])
 
   return (
-    <div className='px-5 mt-14 flex flex-col'>
+    <div className='px-5 mt-14 max-w-[1240px] mx-auto flex flex-col lg:flex-row lg:items-center lg:gap-6'>
 
       {/* MAIN-CONTENT */}
-      <div className='bg-secondary rounded-xl min-h-[320px] max-h-fit px-9 py-9 mb-5 flex flex-col items-center justify-center gap-12'>
+      <div className='bg-secondary rounded-xl min-h-[320px] max-h-fit px-9 py-9 mb-5 flex flex-col items-center justify-center gap-12 lg:flex-[3] lg:min-h-[475px]'>
         <h1 className='heading-1 text-center'>{joke}</h1>
         <p className={`category ${error ? 'bg-red-400' : 'bg-accDark'} px-2 py-1 rounded `}>{curCategory}</p>
       </div>
 
       {/* SETTINGS */}
-      <div className='bg-secondary rounded-xl p-9'>
+      <div className='bg-secondary rounded-xl p-9 lg:flex-1 lg:h-fit'>
         <h2 className='heading-2 mb-1'>Categories:</h2>
         <div className='relative'>
           <button
             className='bg-primary w-full flex items-center justify-between px-3 py-2'
             onClick={() => {setIsOpen((prev) => !prev)}}
           >
-            <p>{category}</p>
+            <p className='heading-3'>{category}</p>
             <span>{isOpen ? <img src="/assets/arrow-up.svg" alt="" /> : <img src="/assets/arrow-down.svg" alt="" />}</span>
           </button>
           {isOpen && 
