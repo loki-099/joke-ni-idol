@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Lato:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .heading-1 {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+  }
+  .heading-2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+  }
+  .heading-3 {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+  }
+  .btn {
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+  }
+  .category {
+    font-size: 16px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+  }
+}
