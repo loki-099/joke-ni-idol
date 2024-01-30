@@ -4,7 +4,7 @@ import Body from '../components/Body';
 
 const Home = () => {
   return (
-    <div className='h-screen text-white'>
+    <div className='h-[130vh] text-white'>
       <Header/>
       <Body/>
     </div>
