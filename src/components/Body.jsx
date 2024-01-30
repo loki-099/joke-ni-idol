@@ -57,7 +57,7 @@ const Body = () => {
             <div className='bg-primary w-full absolute mt-1 flex flex-col items-start'>
               {categories.map((category) => {
                 return (
-                  <CategoryButton category={category} handleChoose={handleChoose}/>
+                  <CategoryButton key={category} category={category} handleChoose={handleChoose}/>
                 )
               })}
             </div>
